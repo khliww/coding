@@ -1,0 +1,14 @@
+.container{
+    width: 75%;
+    margin: auto;
+    background-color: rgb(130,131,57);
+    color: beige;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+}
+
+.kalkulator{
+    display: flex;
+    
+}

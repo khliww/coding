@@ -1,0 +1,108 @@
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    width: 100%;
+    height: 100%;
+    background: #6d5a5a url(/bg.webp) center center/cover no-repeat;
+
+  }
+  
+  .header { grid-area: header; 
+            /* background-color: rgb(142, 165, 208);     */
+  }
+  
+  .container .nav {
+    grid-area: nav;  
+    letter-spacing: 1px;
+    position: absolute;
+    top: 16rem;
+    left: 56rem;
+  }
+
+  .container .nav a {
+    font-size: 28px;
+    color: rgb(20, 24, 36);
+    text-decoration: none;
+  }
+
+  .main {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gambar keqing"
+      "tulisan foto"
+      "tlsn-wpn weapon"
+      "raiden-abt raiden";
+    grid-area: main;
+    /* background-color: rgb(142, 165, 208); */
+  }
+  
+  .gambar { grid-area: gambar;}
+  
+  
+  .keqing { grid-area: keqing;
+            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 23px;
+  }
+
+  .footer { grid-area: footer;
+    background-color:  rgb(41, 51, 67);
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background: #6d5a5a url(/bg2.webp) center center/cover no-repeat;
+
+}
+
+  .tulisan { 
+    grid-area: tulisan;
+    text-align: center;
+    font-size: 20px;
+  }
+   
+  .foto { grid-area: foto;
+    text-align: center;
+  }
+
+  .container .main .Weapon {
+    grid-area: weapon;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .container .main img {
+    /* background-color: cornflowerblue; */
+    opacity: 0,01;
+  }
+
+  .container .main .raiden-abt{
+    font-family: 'Noto Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 23px;
+  }
+
+  .container .main .raidenart {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .container .main .raidenwpn {
+    font-size: 20px ;
+    text-align: center;
+  }
+
+  .container .header .gmbr {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+  }

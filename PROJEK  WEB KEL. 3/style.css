@@ -1,0 +1,131 @@
+.countainer{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "sidebar content"
+    "footer footer";
+}
+
+.centered{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-left{
+    position: absolute;
+   
+}
+
+header{
+    grid-area: header;
+    background-color:black;
+}
+
+nav{
+    grid-area: nav;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+nav a{
+    text-decoration: none;
+    color: #5a2d14;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside{
+    grid-area: sidebar;
+    background-color: rgb(156, 226, 168);
+}
+
+main{
+    grid-area: content;
+    background-color:rgb(152, 119, 119);
+}
+
+footer{
+    grid-area: footer;
+    background-color: darksalmon;
+}
+
+.gbr{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.main {  display: grid;
+    grid-template-columns: 1fr [D] 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "abt-keqing keqing-png"
+      "keqing-img abt-artefac"
+      "abt-weapon abt-weapon"; 
+  }
+  
+  .abt-keqing { grid-area: abt-keqing;
+                height: 20%;
+                width: 100%;
+                background-color: #5a2d14;
+}
+  
+  .keqing-png { grid-area: keqing-png; 
+                 height: 20%;
+                 width: 100%;
+                background-color: brown;
+}
+  
+  .keqing-img { grid-area: keqing-img; }
+  
+  .abt-artefac {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "best-artefac-keqing best-artefac-keqing best-artefac-keqing"
+      "gladiator crite-dmg crite-dmg"
+      "thunderimg atk\% atk\%";
+    grid-area: abt-artefac;
+  }
+  
+  .best-artefac-keqing { grid-area: best-artefac-keqing; }
+  
+  .gladiator { grid-area: gladiator; }
+  
+  .thunderimg { grid-area: thunderimg; }
+  
+  .crite-dmg { grid-area: crite-dmg; }
+  
+  .atk\% { grid-area: atk\%; }
+  
+  .abt-weapon {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 14px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "best-tree-weapon best-tree-weapon best-tree-weapon"
+      "daftar-weapon daftar-weapon daftar-weapon"
+      "jade-cutter black-sword leon-sword";
+    grid-area: abt-weapon;
+  }
+  
+  .best-tree-weapon { grid-area: best-tree-weapon; }
+  
+  .daftar-weapon { grid-area: daftar-weapon; }
+  
+  .jade-cutter { grid-area: jade-cutter; }
+  
+  .black-sword { grid-area: black-sword; }
+  
+  .leon-sword { grid-area: leon-sword; }
+  

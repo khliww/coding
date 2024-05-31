@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paylater</title>
+    <link rel="stylesheet" href="ulangan.css">
+</head>
+<body>
+    <h1>Total Pembayaran</h1>
+    <form action="">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">                
+                    <label for="barang">Nama Barang</label>
+                </div>
+                <div class="col-75">  
+                    <input type="text" name="barang" id="barang" placeholder="Masukkan Barang">
+                </div>         
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="harga">Harga</label>
+                </div>
+                <div class="col-75">   
+                    <input type="text" name="harga" id="harga" placeholder="Masukkan Harga">
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="jumlahbr">Jumlah Barang</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="jumlahbr" id="jumlahbr" placeholder="Masukkan Jumah Barang">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="diskon">Diskon</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="diskon" id="diskon">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="total">Total Beli</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="total" id="total">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button type="button" onclick="total_bli()">Hitung Total</button>
+            </div>
+        </div>
+    </form>
+    <script src="ulangan.js"></script>
+</body>
+</html>
